@@ -1,0 +1,32 @@
+config {
+    absRefPrefix = /
+    tx_realurl_enable = {$config.realurl.enable}
+    simulateStaticDocuments = 0
+
+    renderCharset = utf-8
+    metaCharset = utf-8
+
+    removeDefaultCSS = 1
+    removeDefaultJS = external
+
+    concatenateJs = 0
+    concatenateCss = 0
+    compressJs = 0
+    compressCss = 0
+
+    disablePrefixComment = 1
+    disableImgBorderAttr = 1
+
+    spamProtectEmailAddresses = 0
+
+    intTarget =
+    extTarget = _blank
+
+    doctype = html5
+    xhtml_cleaning = all
+    htmlTag_langKey = {$config.language.abbr}
+    language = {$config.language.language}
+    locale_all = {$config.language.locale}
+
+    no_cache = {$config.no_cache}
+}

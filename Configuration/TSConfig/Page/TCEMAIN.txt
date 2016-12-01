@@ -1,0 +1,4 @@
+TCEMAIN.permissions {
+    groupid = 1
+    group = 31
+}

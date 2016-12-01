@@ -1,0 +1,90 @@
+page = PAGE
+page {
+
+    10 = FLUIDTEMPLATE
+    10 {
+        extbase {
+            pluginName = PageRenderer
+            controllerExtensionName = KoningTemplate
+            controllerVendorName = KoninklijkeCollective
+            controllerName = Page
+            controllerActionName = render
+        }
+
+        templateRootPaths {
+            10 = EXT:koning_template/Resources/Private/Templates/
+        }
+        partialRootPaths {
+            10 = EXT:koning_template/Resources/Private/Partials/
+        }
+        layoutRootPaths {
+            10 = EXT:koning_template/Resources/Private/Layouts/
+        }
+
+        templateName.cObject = CASE
+        templateName.cObject {
+            key.data = levelfield:-1, backend_layout_next_level, slide
+            key.override.field = backend_layout
+
+            {$layout.default} = TEXT
+            {$layout.default}.value = Default
+
+            default = TEXT
+            default.value = Unknown
+        }
+
+        settings {
+            pages {
+                root = {$pages.root}
+            }
+        }
+    }
+
+    meta {
+        keywords.field = keywords
+        description.field = description
+        X-UA-Compatible = IE=edge,chrome=1
+        X-UA-Compatible.httpEquivalent = 1
+        viewport = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no
+    }
+
+    includeJSFooter {
+        grunt-compiled = EXT:blog_template/Resources/Public/JavaScript/Footer.js
+    }
+
+    includeCSSFooter {
+        grunt-compiled = EXT:blog_template/Resources/Public/Css/Compiled.css
+    }
+
+    headerData {
+        10 = TEXT
+        10 {
+            typolink {
+                parameter.data = TSFE:id
+
+                addQueryString = 1
+
+                type = 0
+
+                forceAbsoluteUrl = 1
+                forceAbsoluteUrl.scheme = https
+                returnLast = url
+            }
+
+            wrap = <link rel="canonical" href="|" />
+        }
+    }
+
+    bodyTagCObject = COA
+    bodyTagCObject {
+        wrap = <body |>
+        10 = TEXT
+        10 {
+            noTrimWrap = | id="page-|" |
+            field = uid
+            data.intval = 1
+        }
+    }
+}
+
+plugin.tx_felogin_pi1._CSS_DEFAULT_STYLE >

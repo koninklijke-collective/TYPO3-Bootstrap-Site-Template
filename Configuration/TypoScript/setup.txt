@@ -1,0 +1,8 @@
+# Base
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Base/" extensions="txt">
+
+# Library
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Library/" extensions="txt">
+
+# Extension
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Extension/" extensions="txt">
