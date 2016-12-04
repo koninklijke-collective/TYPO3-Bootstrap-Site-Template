@@ -52,10 +52,6 @@ page {
         grunt-compiled = EXT:koning_template/Resources/Public/JavaScript/Footer.js
     }
 
-    includeCSSFooter {
-        grunt-compiled = EXT:koning_template/Resources/Public/Css/Compiled.css
-    }
-
     headerData {
         10 = TEXT
         10 {
