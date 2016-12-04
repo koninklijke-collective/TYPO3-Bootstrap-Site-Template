@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     grunt.initConfig({
-        baseUrl: 'http://lornlass.dev.local',
+        baseUrl: 'http://website.dev.local',
         directories: {
             extension: '../../',
             bootstrap: 'node_modules/bootstrap-sass/assets/',

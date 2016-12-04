@@ -79,12 +79,12 @@ page {
         20.file = EXT:koning_template/Resources/Public/Css/Critical.css
     }
 
-        footerData {
-             10 = TEXT
-             10.value (
-                <link rel="stylesheet" type="text/css" href="/typo3conf/ext/koning_template/Resources/Public/Css/Compiled.css" media="all">
-             )
-        }
+    footerData {
+         10 = TEXT
+         10.value (
+            <link rel="stylesheet" type="text/css" href="/typo3conf/ext/koning_template/Resources/Public/Css/Compiled.css" media="all">
+         )
+    }
 
     bodyTagCObject = COA
     bodyTagCObject {
