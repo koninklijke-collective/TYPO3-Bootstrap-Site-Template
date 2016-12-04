@@ -2,8 +2,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     grunt.initConfig({
-        // @todo change this to the baseurl of your website
-        baseUrl: 'http://website.dev.local',
+        baseUrl: 'http://lornlass.dev.local',
         directories: {
             extension: '../../',
             bootstrap: 'node_modules/bootstrap-sass/assets/',
@@ -118,6 +117,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-penthouse');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('development', ['sass:development', 'concat', 'compress', 'cssmin']);
-    grunt.registerTask('default', ['sass:default', 'concat', 'uglify', 'compress', 'penthouse', 'cssmin']);
+    grunt.registerTask('development', ['sass:development', 'concat', 'cssmin', 'compress']);
+    grunt.registerTask('default', ['sass:default', 'concat', 'uglify', 'penthouse', 'cssmin', 'compress']);
 };

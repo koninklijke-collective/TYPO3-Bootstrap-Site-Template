@@ -49,11 +49,11 @@ page {
     }
 
     includeJSFooter {
-        grunt-compiled = EXT:blog_template/Resources/Public/JavaScript/Footer.js
+        grunt-compiled = EXT:koning_template/Resources/Public/JavaScript/Footer.js
     }
 
     includeCSSFooter {
-        grunt-compiled = EXT:blog_template/Resources/Public/Css/Compiled.css
+        grunt-compiled = EXT:koning_template/Resources/Public/Css/Compiled.css
     }
 
     headerData {
@@ -73,7 +73,18 @@ page {
 
             wrap = <link rel="canonical" href="|" />
         }
+
+        20 = USER
+        20.userFunc = KoninklijkeCollective\KoningTemplate\UserFunc\PageRenderer->criticalCss
+        20.file = EXT:koning_template/Resources/Public/Css/Critical.css
     }
+
+        footerData {
+             10 = TEXT
+             10.value (
+                <link rel="stylesheet" type="text/css" href="/typo3conf/ext/koning_template/Resources/Public/Css/Compiled.css" media="all">
+             )
+        }
 
     bodyTagCObject = COA
     bodyTagCObject {

@@ -4,5 +4,8 @@
 # Library
 <INCLUDE_TYPOSCRIPT: source="DIR: ./Library/" extensions="txt">
 
-# Extension
+# Extension static
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:sourceopt/Configuration/TypoScript/setup.txt">
+
+# Extension overrides
 <INCLUDE_TYPOSCRIPT: source="DIR: ./Extension/" extensions="txt">

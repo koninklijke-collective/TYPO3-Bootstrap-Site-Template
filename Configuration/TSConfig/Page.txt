@@ -1,3 +1,1 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: ./Page/">
-
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:blog_content/Configuration/TSConfig/Page/FluidContent.txt">
