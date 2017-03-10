@@ -9,8 +9,8 @@ if (!defined('TYPO3_MODE')) {
     'Koning: Template'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::appendToTypoConfVars('BE', 'defaultUserTSconfig', '
-    options {
-        pageTree.showPageIdWithTitle = 1
-    }
-');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::appendToTypoConfVars(
+    'BE',
+    'defaultUserTSconfig',
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:koning_template/Configuration/TSConfig/User/default.t3s">'
+);

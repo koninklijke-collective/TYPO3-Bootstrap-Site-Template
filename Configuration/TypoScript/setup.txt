@@ -1,11 +1,11 @@
-# Base
-<INCLUDE_TYPOSCRIPT: source="DIR: ./Base/" extensions="txt">
-
-# Library
-<INCLUDE_TYPOSCRIPT: source="DIR: ./Library/" extensions="txt">
-
 # Extension static
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:sourceopt/Configuration/TypoScript/setup.txt">
 
 # Extension overrides
-<INCLUDE_TYPOSCRIPT: source="DIR: ./Extension/" extensions="txt">
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Extension/" extensions="t3s">
+
+# Library
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Library/" extensions="t3s">
+
+# Base
+<INCLUDE_TYPOSCRIPT: source="DIR: ./Base/" extensions="t3s">

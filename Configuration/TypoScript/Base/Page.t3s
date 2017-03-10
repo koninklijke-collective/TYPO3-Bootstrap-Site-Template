@@ -26,8 +26,8 @@ page {
             key.data = levelfield:-1, backend_layout_next_level, slide
             key.override.field = backend_layout
 
-            {$layout.default} = TEXT
-            {$layout.default}.value = Default
+            {$template.layout.default} = TEXT
+            {$template.layout.default}.value = Default
 
             default = TEXT
             default.value = Unknown
@@ -35,7 +35,7 @@ page {
 
         settings {
             pages {
-                root = {$pages.root}
+                root = {$template.pages.root}
             }
         }
     }
@@ -94,4 +94,3 @@ page {
     }
 }
 
-plugin.tx_felogin_pi1._CSS_DEFAULT_STYLE >

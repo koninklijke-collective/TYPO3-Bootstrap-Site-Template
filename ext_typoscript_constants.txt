@@ -1,0 +1,20 @@
+template {
+    language {
+        language = en
+        abbr = en
+        code = en_EN
+        locale = en_EN.utf8
+    }
+    realurl {
+        enable = 1
+    }
+    no_cache = 0
+
+    layout {
+        default = pagets__default
+    }
+
+    pages {
+        root = 1
+    }
+}

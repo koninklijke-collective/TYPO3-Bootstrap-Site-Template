@@ -1,6 +1,6 @@
 config {
     absRefPrefix = /
-    tx_realurl_enable = {$config.realurl.enable}
+    tx_realurl_enable = {$template.realurl.enable}
     simulateStaticDocuments = 0
 
     renderCharset = utf-8
@@ -24,9 +24,15 @@ config {
 
     doctype = html5
     xhtml_cleaning = all
-    htmlTag_langKey = {$config.language.abbr}
-    language = {$config.language.language}
-    locale_all = {$config.language.locale}
-
-    no_cache = {$config.no_cache}
+    htmlTag_langKey = {$template.language.abbr}
+    language = {$template.language.language}
+    locale_all = {$template.language.locale}
 }
+
+
+# Development environment overrides
+[applicationContext = Development]
+    config {
+        no_cache = 1
+    }
+[global]

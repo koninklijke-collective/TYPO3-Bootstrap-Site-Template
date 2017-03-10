@@ -1,6 +1,6 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Base template',
+    'title' => 'Template: Koning Bootstrap Template',
     'description' => 'Base site template package',
     'category' => 'templates',
     'version' => '1.0.0',
@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'DevElement',
     'constraints' => [
         'depends' => [
-            'typo3' => '6.2.0-8.99.99',
+            'typo3' => '7.6.0-8.99.99',
             'realurl' => '',
             'sourceopt' => ''
         ],

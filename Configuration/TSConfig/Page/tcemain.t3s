@@ -1,0 +1,8 @@
+TCEMAIN.permissions {
+    # Add "Default Role" as group id
+    groupid = 1
+
+    # Add default all permissions to new pages
+    user = show, editcontent, edit, delete, new
+    group = show, editcontent, edit, delete, new
+}
