@@ -1,0 +1,3 @@
+# Extension static
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:sourceopt/Configuration/TypoScript/constants.txt">
+

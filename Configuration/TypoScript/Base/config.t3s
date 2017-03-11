@@ -1,0 +1,38 @@
+config {
+    absRefPrefix = /
+    tx_realurl_enable = {$template.realurl.enable}
+    simulateStaticDocuments = 0
+
+    renderCharset = utf-8
+    metaCharset = utf-8
+
+    removeDefaultCSS = 1
+    removeDefaultJS = external
+
+    concatenateJs = 0
+    concatenateCss = 0
+    compressJs = 0
+    compressCss = 0
+
+    disablePrefixComment = 1
+    disableImgBorderAttr = 1
+
+    spamProtectEmailAddresses = 0
+
+    intTarget =
+    extTarget = _blank
+
+    doctype = html5
+    xhtml_cleaning = all
+    htmlTag_langKey = {$template.language.abbr}
+    language = {$template.language.language}
+    locale_all = {$template.language.locale}
+}
+
+
+# Development environment overrides
+[applicationContext = Development]
+    config {
+        no_cache = 1
+    }
+[global]

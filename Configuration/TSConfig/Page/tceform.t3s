@@ -1,0 +1,11 @@
+TCEFORM {
+    tt_content {
+        header_layout {
+            removeItems = 4,5,6
+
+            altLabels.1 = Header 1
+            altLabels.2 = Header 2
+            altLabels.3 = Header 3
+        }
+    }
+}
