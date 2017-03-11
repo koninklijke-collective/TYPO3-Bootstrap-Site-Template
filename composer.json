@@ -1,0 +1,26 @@
+{
+    "name": "koninklijke-collective/typo3-bootstrap-site-template",
+    "type": "project",
+    "version": "1.0.0",
+    "description": "TYPO3 CMS: Site Template",
+    "keywords": [
+        "TYPO3",
+        "cms",
+        "Koninklijke Collective"
+    ],
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Benjamin Serfhos",
+            "email": "benjamin@serfhos.com",
+            "homepage": "http://serfhos.com"
+        }
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "rm composer.json",
+            "rm .gitignore",
+            "rm README.md"
+        ]
+    }
+}
